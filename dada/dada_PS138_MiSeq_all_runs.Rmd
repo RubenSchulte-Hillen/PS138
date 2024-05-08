@@ -1,0 +1,881 @@
+---
+title: "PS138_dada_all_runs"
+author: "Ruben Schulte-Hillen"
+date: "2024-05-08"
+output: html_document
+---
+---
+title: "dada_PS138_MiSeq_1_2_3"
+author: "Ruben Schulte-Hillen"
+date: "2024-04-15"
+output: html_document
+---
+---
+title: "ARCWATCH-1: 16S rRNA amplicons"
+---
+Miseq Runs :
+
+M03457_0149_000000000-L95YW
+M03457_0140_000000000-L9424
+M03457_0137_000000000-L2MMN
+
+This markdown describes processing of 16S rRNA amplicons, originating from seawater and sea-ice  samples from expedition Arcwatch-1 (central Arctic Ocean, 2023).
+
+First: Primer clipping using *Cutadapt*  
+
+# 1st MiSeq run
+```{console}
+
+######################################################################
+  ## MiSeq L2MMN ## CTD 2 - CTD 190
+######################################################################
+
+cd /isibhv/projects/FRAMdata/MolObs/WaterCol_CTD_ICE_PS138
+
+# Fetch fastqs from TapeArchive via custom script
+# Names listed in files_L2MMN.txt
+/isibhv/projects/p_bioinf2/miseq/copy-files-from-tape.sh files_L2MMN.txt
+# Rename / remove MiSeq run-ID 
+rename 'M03457_0137_000000000-L2MMN' 'L2MMN' *
+cd L2MMN
+mkdir Original 
+mv *gz Original
+
+######################################
+
+module load /albedo/soft/modules/bio/cutadapt/4.4
+
+# Use custom script 
+bash ../../software/cutadapt.sh ./Original GTGYCAGCMGCCGCGGTAA CCGYCAATTYMTTTRAGTTT
+
+# One sample = two fastq files
+# Create unique names - so not overwritten in following batch-rename 
+cd Clipped
+
+# Shortening filenames
+# First: test-rename
+for i in *fastq.gz; do nname=`echo $i | awk '{gsub(/S[0-9]{1,3}_L001/,"clip");print}'`; echo -e $i $nname; done
+
+# if looking OK - execute:  
+for i in *fastq.gz; do nname=`echo $i | awk '{gsub(/S[0-9]{1,3}_L001/,"clip");print}'`; mv $i $nname; done
+
+# write sampleNames for dada
+ls -1 *R1_001.fastq.gz | sed 's/_R1_001\.fastq.gz//' > ../sampleNames.txt
+
+```
+
+*DADA2 amplicon analysis*
+
+# done in RStudio within AWI-VM
+# provided IP address opened in browser
+# adjust for your own system 
+
+
+
+```{r, eval = F}
+
+require(dada2)
+require(ShortRead)
+require(ggplot2)
+require(gridExtra)
+
+#########################################
+
+setwd("/isibhv/projects/FRAMdata/MolObs/WaterCol_CTD_ICE_PS138/L2MMN/")
+
+
+# list files
+path <- "/isibhv/projects/FRAMdata/MolObs/WaterCol_CTD_ICE_PS138/L2MMN/Clipped"
+fns <- list.files(path)
+fns
+
+# ensure fwd/rev reads  in same order
+fnFs <- sort(list.files(path, pattern="_R1_001.fastq.gz"))
+fnRs <- sort(list.files(path, pattern="_R2_001.fastq.gz"))
+
+# Define sample names
+sampleNames <- sort(read.table(
+  "sampleNames.txt", 
+  h=F, stringsAsFactors=F)$V1)
+
+# Specify the full path to the fnFs and fnRs
+fnFs <- file.path(path, fnFs)
+fnRs <- file.path(path, fnRs)
+
+#################################
+
+QualityProfileFs <- list()
+for(i in 1:length(fnFs)) {QualityProfileFs[[i]] <- list()
+QualityProfileFs[[i]][[1]] <- plotQualityProfile(fnFs[i])}
+pdf("QualityProfileForward.pdf")
+for(i in 1:length(fnFs)) {do.call("grid.arrange", 
+                                  QualityProfileFs[[i]])}
+dev.off()
+rm(QualityProfileFs)
+
+QualityProfileRs <- list()
+for(i in 1:length(fnRs)) {
+  QualityProfileRs[[i]] <- list()
+  QualityProfileRs[[i]][[1]] <- plotQualityProfile(
+    fnRs[i])}
+pdf("QualityProfileReverse.pdf")
+for(i in 1:length(fnRs)) {do.call("grid.arrange", 
+                                  QualityProfileRs[[i]])}
+dev.off()
+rm(QualityProfileRs)
+
+# Prepare for fastq filtering
+filt_path <- file.path("/isibhv/projects/FRAMdata/MolObs/WaterCol_CTD_ICE_PS138/L2MMN/Filtered")
+if(!file_test("-d", filt_path)) dir.create(filt_path)
+filtFs <- file.path(
+  filt_path, paste0(sampleNames, "_F_filt.fastq"))
+filtRs <- file.path(
+  filt_path, paste0(sampleNames, "_R_filt.fastq"))
+
+###############################
+## Filter 
+# Consider expected overlap
+# truncLen lowered based on QualityProfile (low-Q rev-reads)
+
+
+out <- filterAndTrim(
+  fnFs, 
+  filtFs, 
+  fnRs, 
+  filtRs,
+  truncLen = c(250, 165),
+  maxN = 0,
+  minQ = 2,
+  maxEE = c(3, 3), 
+  truncQ = 0, 
+  rm.phix = T,
+  compress=F,
+  multithread = T)
+
+#data_L2MMN <- c(filt_path,filtFs,filtRs,fnFs,fnRs,i,path,sampleNames)
+save.image("data_L2MMN.Rdata")
+
+# Should retain >70% 
+head(out)
+summary(out[, 2]/out[, 1])
+#
+#
+
+#   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+#0.1320  0.7561  0.7725  0.7176  0.7822  0.8022       1 
+################################
+# Quality check 
+QualityProfileFs.filt <- list()
+for(i in 1:length(filtFs)) {
+  QualityProfileFs.filt[[i]] <- list()
+  QualityProfileFs.filt[[i]][[1]] <- plotQualityProfile(
+    filtFs[i])}
+pdf("QualityProfileForwardFiltered.pdf")
+for(i in 1:length(filtFs)) {do.call("grid.arrange", 
+                                    QualityProfileFs.filt[[i]])}
+dev.off()
+rm(QualityProfileFs.filt)
+
+QualityProfileRs.filt <- list()
+for(i in 1:length(filtRs)) {
+  QualityProfileRs.filt[[i]] <- list()
+  QualityProfileRs.filt[[i]][[1]] <- plotQualityProfile(
+    filtRs[i])}
+pdf("QualityProfileReverseFiltered.pdf")
+for(i in 1:length(filtRs)) {  do.call("grid.arrange", 
+                                      QualityProfileRs.filt[[i]])}
+dev.off()
+rm(QualityProfileRs.filt)
+
+#########################
+# Learn errors 
+errF <- learnErrors(
+  filtFs, multithread=T, 
+  randomize=T, verbose=1, MAX_CONSIST=20)
+errR <- learnErrors(
+  filtRs, multithread=T, 
+  randomize=T, verbose=1, MAX_CONSIST=20)
+
+#Zwischenspeichern
+#data_L2MMN <- c(data_L2MMN,errF,errR)
+save.image("data_L2MMN.Rdata")
+
+# Plot error profiles
+pdf("ErrorProfiles.pdf")
+plotErrors(errF, nominalQ = T)
+plotErrors(errR, nominalQ = T)
+dev.off()
+# convergence after 5-5 rounds - ok!
+# few outliers outside black line - ok!
+
+# Function to check if corresponding files exist
+checkCorrespondingFiles <- function(filtFs, filtRs) {
+  for (i in seq_along(filtFs)) {
+    base_name_f <- gsub("_clip_F_filt.fastq$", "", basename(filtFs[i]))
+    corresponding_r <- paste0(dirname(filtRs[i]), "/", base_name_f, "_clip_R_filt.fastq")
+    if (!file.exists(filtFs[i])) {
+      cat("Forward read file does not exist:", filtFs[i], "\n")
+    }
+    if (!file.exists(corresponding_r)) {
+      cat("Reverse read file does not exist:", filtRs[i], "\n")
+    }
+  }
+}
+
+# Check if corresponding files exist
+checkCorrespondingFiles(filtFs, filtRs)
+# Dereplication 
+derepFs <- derepFastq(filtFs, verbose=T)
+derepRs <- derepFastq(filtRs, verbose=T)
+
+#data_L2MMN <- c(data_L2MMN,derepFs,derepRs)
+#save.image("data_L2MMN.Rdata")
+
+# Rename by clip-filenames
+names(derepFs) <- sampleNames
+names(derepRs) <- sampleNames
+
+
+
+# Denoising
+dadaFs <- dada(
+  derepFs, err=errF, multithread=T, pool="pseudo")
+dadaRs <- dada(
+  derepRs, err=errR, multithread=T, pool="pseudo")
+
+
+#################################
+
+#data_L2MMN <- c(data_L4MMN,dadaFs,dadaRs)
+save.image("data_L2MMN.Rdata")
+
+# Read merging
+mergers <- mergePairs(
+  dadaFs, 
+  derepFs, 
+  dadaRs,
+  derepRs,
+  minOverlap=15,
+  verbose=T,
+  propagateCol = c(
+    "birth_fold", 
+    "birth_ham"))
+
+# Create sequence table
+seqtab <- makeSequenceTable(mergers)
+dim(seqtab) #95 20293 sequences
+saveRDS(seqtab,"seqtab_16S_L2MMN.rds")
+#
+# summary stats
+getN <- function(x) sum(getUniques(x))
+track <- cbind(out, sapply(
+  dadaFs, getN), sapply(mergers, getN), 
+  rowSums(seqtab))
+colnames(track) <- c(
+  "input","filtered","denoised",
+  "merged","tabled")
+rownames(track) <- sampleNames
+track <- data.frame(track)
+head(track)
+
+write.table(track, 
+            "dadastats_16S_L2MMN.txt", 
+            quote=F, sep="\t")
+
+save.image("16S_L2MMN.Rdata")
+
+#data_L2MMN <- c(dadaFs,dadaRs,derepFs,derepRs,errF,errF,seqtab,track,mergers,out)
+#save.image("data_L2MMN.Rdata")
+
+```
+#2nd Miseq run
+
+```{console}
+
+######################################################################
+  ## MiSeq run L9424 ## CTD 192 - CTD 380
+######################################################################
+
+# change to working directory
+cd /isibhv/projects/FRAMdata/MolObs/WaterCol_CTD_ICE_PS138/
+  '''
+#copy fastq files from netscratch 
+cp /isibhv/netscratch/fqs_240105_M03457_0140_000000000-L9424/ /isibhv/projects/FRAMdata/MolObs/WaterCol_CTD_PS138/
+'''
+
+  
+# Fetch fastqs from TapeArchive via custom script
+# Fastq listed in files_KMBTT.txt
+/isibhv/projects/p_bioinf2/miseq/copy-files-from-tape.sh files_L9424.txt
+
+# Rename / remove MiSeq run-ID 
+rename 'M03457_0140_000000000-L9424' 'L9424' *
+cd L9424
+mkdir Original
+mv *gz Original
+
+######################################
+
+module load /albedo/soft/modules/bio/cutadapt/4.4
+
+# Use custom script 
+bash ../../software/cutadapt.sh ./Original GTGYCAGCMGCCGCGGTAA CCGYCAATTYMTTTRAGTTT
+
+# Shortenening filenames
+# First: test-rename
+cd Clipped
+for i in *fastq.gz; do nname=`echo $i | awk '{gsub(/S[0-9]{1,3}_L001/,"clip");print}'`; echo -e $i $nname; done
+
+# if looking OK - execute:  
+for i in *fastq.gz; do nname=`echo $i | awk '{gsub(/S[0-9]{1,3}_L001/,"clip");print}'`; mv $i $nname; done
+
+# write sampleNames for dada
+ls -1 *R1_001.fastq.gz | sed 's/_R1_001\.fastq.gz//' > ../sampleNames.txt
+
+```
+
+*DADA2 amplicon analysis*
+
+# done in RStudio within AWI-VM
+# provided IP address opened in browser
+# adjust for your own system 
+
+```{r, eval = F}
+require(dada2)
+require(ShortRead)
+require(ggplot2)
+require(gridExtra)
+
+##########################################
+
+setwd("/isibhv/projects/FRAMdata/MolObs/WaterCol_CTD_ICE_PS138/L9424/")
+
+
+# list files
+path <- "/isibhv/projects/FRAMdata/MolObs/WaterCol_CTD_ICE_PS138/L9424/Clipped"
+fns <- list.files(path)
+fns
+
+# ensure fwd/rev reads  in same order
+fnFs <- sort(list.files(path, pattern="_R1_001.fastq.gz"))
+fnRs <- sort(list.files(path, pattern="_R2_001.fastq.gz"))
+
+# Define sample names
+sampleNames <- sort(read.table(
+  "sampleNames.txt", 
+  h=F, stringsAsFactors=F)$V1)
+
+# Specify the full path to the fnFs and fnRs
+fnFs <- file.path(path, fnFs)
+fnRs <- file.path(path, fnRs)
+
+
+QualityProfileFs <- list()
+for(i in 1:length(fnFs)) {QualityProfileFs[[i]] <- list()
+QualityProfileFs[[i]][[1]] <- plotQualityProfile(fnFs[i])}
+pdf("QualityProfileForward.pdf")
+for(i in 1:length(fnFs)) {do.call("grid.arrange", 
+                                  QualityProfileFs[[i]])}
+dev.off()
+rm(QualityProfileFs)
+
+QualityProfileRs <- list()
+for(i in 1:length(fnRs)) {
+  QualityProfileRs[[i]] <- list()
+  QualityProfileRs[[i]][[1]] <- plotQualityProfile(
+    fnRs[i])}
+pdf("QualityProfileReverse.pdf")
+for(i in 1:length(fnRs)) {do.call("grid.arrange", 
+                                  QualityProfileRs[[i]])}
+dev.off()
+rm(QualityProfileRs)
+
+# Prepare for fastq filtering
+filt_path <- file.path("/isibhv/projects/FRAMdata/MolObs/WaterCol_CTD_ICE_PS138/L9424/Filtered")
+if(!file_test("-d", filt_path)) dir.create(filt_path)
+filtFs <- file.path(
+  filt_path, paste0(sampleNames, "_F_filt.fastq"))
+filtRs <- file.path(
+  filt_path, paste0(sampleNames, "_R_filt.fastq"))
+
+###############################
+## Filter 
+# Consider expected overlap
+# truncLen lowered based on QualityProfile (low-Q rev-reads)
+
+out <- filterAndTrim(
+  fnFs, 
+  filtFs, 
+  fnRs, 
+  filtRs,
+  truncLen = c(250, 165),
+  maxN = 0,
+  minQ = 2,
+  maxEE = c(3, 3), 
+  truncQ = 0, 
+  rm.phix = T,
+  compress=F,
+  multithread = T)
+
+
+# Should retain >70% 
+head(out)
+
+summary(out[, 2]/out[, 1])
+#   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+#0.1977  0.6919  0.7034  0.6940  0.7119  0.7448 
+#Zwischenspeichern
+save.image("data_L9424.Rdata")
+
+
+##################################
+
+# Quality check 
+QualityProfileFs.filt <- list()
+for(i in 1:length(filtFs)) {
+  QualityProfileFs.filt[[i]] <- list()
+  QualityProfileFs.filt[[i]][[1]] <- plotQualityProfile(
+    filtFs[i])}
+pdf("QualityProfileForwardFiltered.pdf")
+for(i in 1:length(filtFs)) {do.call("grid.arrange", 
+                                    QualityProfileFs.filt[[i]])}
+dev.off()
+rm(QualityProfileFs.filt)
+
+QualityProfileRs.filt <- list()
+for(i in 1:length(filtRs)) {
+  QualityProfileRs.filt[[i]] <- list()
+  QualityProfileRs.filt[[i]][[1]] <- plotQualityProfile(
+    filtRs[i])}
+pdf("QualityProfileReverseFiltered.pdf")
+for(i in 1:length(filtRs)) {  do.call("grid.arrange", 
+                                      QualityProfileRs.filt[[i]])}
+dev.off()
+rm(QualityProfileRs.filt)
+
+#########################
+# Learn errors 
+errF <- learnErrors(
+  filtFs, multithread=T, 
+  randomize=T, verbose=1, MAX_CONSIST=20)
+errR <- learnErrors(
+  filtRs, multithread=T, 
+  randomize=T, verbose=1, MAX_CONSIST=20)
+
+#Zwischenspeichern
+
+#save.image("data_L9424.Rdata")
+
+# Plot error profiles
+pdf("ErrorProfiles.pdf")
+plotErrors(errF, nominalQ = T)
+plotErrors(errR, nominalQ = T)
+dev.off()
+# convergence after 5-5 rounds - ok!
+# few outliers outside black line - ok!
+
+# Dereplication 
+derepFs <- derepFastq(filtFs, verbose=T)
+derepRs <- derepFastq(filtRs, verbose=T)
+
+#data_L9424 <- c(data_L9424,derepFs,derepRs)
+save.image("data_L9424.Rdata")
+
+# Rename by clip-filenames
+names(derepFs) <- sampleNames
+names(derepRs) <- sampleNames
+
+
+
+# Denoising
+dadaFs <- dada(
+  derepFs, err=errF, multithread=T, pool="pseudo")
+dadaRs <- dada(
+  derepRs, err=errR, multithread=T, pool="pseudo")
+
+
+#################################
+
+#data_L9424 <- c(data_L9424,dadaFs,dadaRs)
+save.image("data_L9424.Rdata")
+
+# Read merging
+mergers <- mergePairs(
+  dadaFs, 
+  derepFs, 
+  dadaRs,
+  derepRs,
+  minOverlap=15,
+  verbose=T,
+  propagateCol = c(
+    "birth_fold", 
+    "birth_ham"))
+
+# Create sequence table
+seqtab <- makeSequenceTable(mergers)
+dim(seqtab)
+saveRDS(seqtab,"seqtab_16S_L9424.rds")
+#1]    97 18049
+
+# summary stats
+getN <- function(x) sum(getUniques(x))
+track <- cbind(out, sapply(
+  dadaFs, getN), sapply(mergers, getN), 
+  rowSums(seqtab))
+colnames(track) <- c(
+  "input","filtered","denoised",
+  "merged","tabled")
+rownames(track) <- sampleNames
+track <- data.frame(track)
+head(track)
+
+write.table(track, 
+            "dadastats_16S_L9424.txt", 
+            quote=F, sep="\t")
+
+
+save.image("data_L9424.Rdata")
+
+```
+
+Next we analyze the 3rd MiSeq run.
+
+```{console}
+######################################################################
+## MiSeq L95YW ## CTD382 - CTD429 + Ice2 - Ice62 + ISCA + rerun samples
+######################################################################
+
+cd /isibhv/projects/FRAMdata/MolObs/WaterCol_CTD_ICE_PS138
+'''
+#copy fastq files from netscratch 
+cp/isibhv/netscratch/miseq/M03457_0149_000000000-L95YW/isibhv/projects/FRAMdata/MolObs/WaterCol_CTD_PS138/
+'''
+# Fetch fastqs from TapeArchive via custom script
+# Names listed in files_L95YW.txt
+/isibhv/projects/p_bioinf2/miseq/copy-files-from-tape.sh files_L95YW.txt
+
+# Rename / remove MiSeq run-ID 
+rename 'M03457_0149_000000000-L95YW' 'L95YW' *
+cd L95YW
+mkdir Original
+mv *gz Original
+
+######################################
+
+module load /albedo/soft/modules/bio/cutadapt/4.4
+
+# Use custom script 
+bash ../../software/cutadapt.sh ./Original GTGYCAGCMGCCGCGGTAA CCGYCAATTYMTTTRAGTTT
+
+# Shortening filenames
+# First: test-rename
+for i in *fastq.gz; do nname=`echo $i | awk '{gsub(/S[0-9]{1,3}_L001/,"clip");print}'`; echo -e $i $nname; done
+
+# if looking OK - execute:  
+for i in *fastq.gz; do nname=`echo $i | awk '{gsub(/S[0-9]{1,3}_L001/,"clip");print}'`; mv $i $nname; done
+
+# write sampleNames for dada
+ls -1 *R1_001.fastq.gz | sed 's/_R1_001\.fastq.gz//' > ../sampleNames.txt
+
+```
+
+*DADA2 amplicon analysis*
+
+# done in RStudio within AWI-VM
+# provided IP address opened in browser
+# adjust for your own system 
+
+```{r, eval = F}
+
+if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager") 
+BiocManager::install("dada2") 
+BiocManager::install("ShortRead") 
+
+
+require(dada2)
+require(ShortRead)
+require(ggplot2)
+require(gridExtra)
+
+#########################################
+
+setwd("/isibhv/projects/FRAMdata/MolObs/WaterCol_CTD_ICE_PS138/L95YW/")
+
+
+# list files
+path <- "/isibhv/projects/FRAMdata/MolObs/WaterCol_CTD_ICE_PS138/L95YW/Clipped"
+fns <- list.files(path)
+fns
+
+# ensure fwd/rev reads  in same order
+fnFs <- sort(list.files(path, pattern="_R1_001.fastq.gz"))
+fnRs <- sort(list.files(path, pattern="_R2_001.fastq.gz"))
+
+# Define sample names
+sampleNames <- sort(read.table(
+  "sampleNames.txt", 
+  h=F, stringsAsFactors=F)$V1)
+
+# Specify the full path to the fnFs and fnRs
+fnFs <- file.path(path, fnFs)
+fnRs <- file.path(path, fnRs)
+
+#################################
+
+QualityProfileFs <- list()
+for(i in 1:length(fnFs)) {QualityProfileFs[[i]] <- list()
+QualityProfileFs[[i]][[1]] <- plotQualityProfile(fnFs[i])}
+pdf("QualityProfileForward.pdf")
+for(i in 1:length(fnFs)) {do.call("grid.arrange", 
+                                  QualityProfileFs[[i]])}
+dev.off()
+rm(QualityProfileFs)
+
+QualityProfileRs <- list()
+for(i in 1:length(fnRs)) {
+  QualityProfileRs[[i]] <- list()
+  QualityProfileRs[[i]][[1]] <- plotQualityProfile(
+    fnRs[i])}
+pdf("QualityProfileReverse.pdf")
+for(i in 1:length(fnRs)) {do.call("grid.arrange", 
+                                  QualityProfileRs[[i]])}
+dev.off()
+rm(QualityProfileRs)
+
+
+# Prepare for fastq filtering<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+filt_path <- file.path(path, "../Filtered")
+if(!file_test("-d", filt_path)) dir.create(filt_path)
+filtFs <- file.path(
+  filt_path, paste0(sampleNames, "_F_filt.fastq"))
+filtRs <- file.path(
+  filt_path, paste0(sampleNames, "_R_filt.fastq"))
+###############################
+
+
+## Filter 
+# Consider expected overlap
+# truncLen lowered based on QualityProfile (low-Q rev-reads)
+out <- filterAndTrim(
+  fnFs, 
+  filtFs, 
+  fnRs, 
+  filtRs,
+  truncLen = c(250, 165),
+  #265,170
+  maxN = 0,
+  minQ = 2,
+  maxEE = c(3, 3), 
+  truncQ = 0, 
+  rm.phix = T,
+  compress=F,
+  multithread = T)
+
+# Should retain >70% 
+head(out)
+summary(out[, 2]/out[, 1])
+#Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+#0.7071  0.8688  0.8775  0.8739  0.8867  0.9054 
+#################################
+
+# Quality check 
+QualityProfileFs.filt <- list()
+for(i in 1:length(filtFs)) {
+  QualityProfileFs.filt[[i]] <- list()
+  QualityProfileFs.filt[[i]][[1]] <- plotQualityProfile(
+    filtFs[i])}
+pdf("QualityProfileForwardFiltered.pdf")
+for(i in 1:length(filtFs)) {do.call("grid.arrange", 
+                                    QualityProfileFs.filt[[i]])}
+dev.off()
+rm(QualityProfileFs.filt)
+
+QualityProfileRs.filt <- list()
+for(i in 1:length(filtRs)) {
+  QualityProfileRs.filt[[i]] <- list()
+  QualityProfileRs.filt[[i]][[1]] <- plotQualityProfile(
+    filtRs[i])}
+pdf("QualityProfileReverseFiltered.pdf")
+for(i in 1:length(filtRs)) {  do.call("grid.arrange", 
+                                      QualityProfileRs.filt[[i]])}
+dev.off()
+rm(QualityProfileRs.filt)
+
+#########################
+# Learn errors 
+errF <- learnErrors(
+  filtFs, multithread=24, 
+  randomize=T, verbose=1, MAX_CONSIST=20)
+errR <- learnErrors(
+  filtRs, multithread=24, 
+  randomize=T, verbose=1, MAX_CONSIST=20)
+
+# Plot error profiles
+pdf("ErrorProfiles.pdf")
+plotErrors(errF, nominalQ = T)
+plotErrors(errR, nominalQ = T)
+dev.off()
+# convergence after 5-5 rounds - ok!
+# few outliers outside black line - ok!
+
+
+# Dereplication 
+derepFs <- derepFastq(filtFs, verbose=T)
+derepRs <- derepFastq(filtRs, verbose=T)
+
+# Rename by clip-filenames
+names(derepFs) <- sampleNames
+names(derepRs) <- sampleNames
+
+# Denoising
+dadaFs <- dada(
+  derepFs, err=errF, multithread=T, pool="pseudo")
+dadaRs <- dada(
+  derepRs, err=errR, multithread=T, pool="pseudo")
+
+
+#################################
+
+
+# Read merging
+mergers <- mergePairs(
+  dadaFs, 
+  derepFs, 
+  dadaRs,
+  derepRs,
+  minOverlap=18,
+  verbose=T,
+  propagateCol = c(
+    "birth_fold", 
+    "birth_ham"))
+
+# Create sequence table
+seqtab <- makeSequenceTable(mergers)
+dim(seqtab) # 72 18797 sequences
+
+saveRDS(seqtab,"seqtab_16S_L95YW.rds")
+
+# summary stats
+getN <- function(x) sum(getUniques(x))
+track <- cbind(out, sapply(
+  dadaFs, getN), sapply(mergers, getN), 
+  rowSums(seqtab))
+colnames(track) <- c(
+  "input","filtered","denoised",
+  "merged","tabled")
+rownames(track) <- sampleNames
+track <- data.frame(track)
+head(track)
+
+write.table(track, 
+            "dadastats_16S_L95YW.txt", 
+            quote=F, sep="\t")
+
+save.image("16S_L95YW.Rdata")
+
+#data_L9424 <- c(dadaFs,dadaRs,derepFs,derepRs,errF,errF,seqtab,track,mergers,out)
+#save.image("data_L95YW.Rdata")
+
+write.table(
+  seqtab,"16S_seqtab_L95YW.txt", 
+  sep="\t", quote=F)
+```
+
+```{r, eval = F}
+###### Merge_L2MMN_L9242_L95YW ######################
+
+
+setwd("/isibhv/projects/FRAMdata/MolObs/WaterCol_CTD_ICE_PS138")
+
+# Load seqtabs
+sq1 <- readRDS(
+  "./L2MMN/seqtab_16S_L2MMN.rds")
+sq2 <- readRDS(
+  "./L9424/seqtab_16S_L9424.rds")
+sq3 <- readRDS(
+  "./L95YW/seqtab_16S_L95YW.rds")
+
+seqtab <- mergeSequenceTables(
+  sq1, sq2, sq3, repeats="error")
+
+
+  # Remove chimeras 
+#Identified 17227 bimeras out of 33021 input sequences.
+seqtab.nochim <- removeBimeraDenovo(
+  seqtab, method = "consensus", 
+  multithread=T, verbose=T)
+
+
+dim(seqtab.nochim)  #254 15794
+summary(rowSums(seqtab.nochim)/rowSums(seqtab))
+#  Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+#0.8983  0.9746  0.9796  0.9803  0.9888  0.9986 
+
+
+# Determine amplicon length/size range 
+table(rep(nchar(
+  colnames(seqtab.nochim)), 
+  colSums(seqtab.nochim)))
+
+# Remove singletons and junk sequences
+# "c" adjusted to size range of amplicons
+seqtab.nochim2 <- seqtab.nochim[, nchar(
+  colnames(seqtab.nochim)) %in% c(364:399) & 
+    colSums(seqtab.nochim) > 1]
+
+# Stats
+dim(seqtab.nochim2) # 254 14858 sequences
+summary(rowSums(seqtab.nochim2))
+summary(rowSums(seqtab.nochim2)/rowSums(seqtab.nochim))
+
+
+#  Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+#    53   75209  108652  131631  144437 1183588 
+#0.9891  0.9999  1.0000  0.9999  1.0000  1.0000 
+##########################################################
+
+## TAXONOMY -- Silva v138.1 ##
+
+tax <- assignTaxonomy(
+  seqtab.nochim2, 
+  "../tax_db/silva_nr99_v138.1_wSpecies_train_set.fa.gz", 
+  tryRC = TRUE,
+  multithread = T)
+
+#Archaea  Bacteria Eukaryota 
+#683     14169         5 
+table(tax[, 1])   
+
+# Remove NA on phylum level
+sum(is.na(tax[, 2])) #269
+tax.good <- tax[!is.na(tax[, 2]),]
+seqtab.nochim2.good <- seqtab.nochim2[
+  , rownames(tax.good)]
+summary(rowSums(seqtab.nochim2.good))
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+#   53   75086  108246  131226  144255 1181408
+
+# Format tables
+seqtab.nochim2.print <- t(seqtab.nochim2.good)
+tax.print <- tax.good
+all.equal(rownames(
+  seqtab.nochim2.print), 
+  rownames(tax.print)) #TRUE
+rownames(seqtab.nochim2.print) <- paste(
+  "asv", 1:ncol(seqtab.nochim2.good), sep = "")
+rownames(tax.print) <- rownames(seqtab.nochim2.print)
+
+# Export
+write.table(
+  seqtab.nochim2.print,"16S_seqtab.txt", 
+  sep="\t", quote=F)
+write.table(
+  tax.print,"16S_tax.txt", 
+  sep="\t", quote=F)
+uniquesToFasta(
+  seqtab.nochim2.good,
+  "16S_uniques.fasta")
+
+```
+
+```
