@@ -1,0 +1,424 @@
+cluster	asv	Phylum	Class	Order	Family	Genus	OTU
+C1	asv3	SAR324 clade(Marine group B)	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	asv3
+C1	asv15	Verrucomicrobiota	Verrucomicrobiae	Arctic97B-4 marine group	Arctic97B-4 marine group uc	Arctic97B-4 marine group uc	asv15
+C1	asv22	Proteobacteria	Gammaproteobacteria	Pseudomonadales	SAR86 clade	SAR86 clade uc	asv22
+C1	asv25	Crenarchaeota	Nitrososphaeria	Nitrosopumilales	Nitrosopumilaceae	Cand Nitrosopumilus	asv25
+C1	asv34	Marinimicrobia (SAR406 clade)	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	asv34
+C1	asv40	Bacteroidota	Bacteroidia	Flavobacteriales	Cryomorphaceae	Cryomorphaceae uc	asv40
+C1	asv48	Marinimicrobia (SAR406 clade)	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	asv48
+C1	asv54	Crenarchaeota	Nitrososphaeria	Nitrosopumilales	Nitrosopumilaceae	Cand Nitrosopumilus	asv54
+C1	asv65	Bacteroidota	Bacteroidia	Flavobacteriales	NS9 marine group	NS9 marine group uc	asv65
+C1	asv97	Proteobacteria	Alphaproteobacteria	Puniceispirillales	SAR116 clade	SAR116 clade uc	asv97
+C1	asv106	Bacteroidota	Bacteroidia	Flavobacteriales	Cryomorphaceae	Cryomorphaceae uc	asv106
+C1	asv110	Bacteroidota	Bacteroidia	Flavobacteriales	NS9 marine group	NS9 marine group uc	asv110
+C1	asv119	Thermoplasmatota	Thermoplasmata	Marine Group II	Marine Group II uc	Marine Group II uc	asv119
+C1	asv121	Crenarchaeota	Nitrososphaeria	Nitrosopumilales	Nitrosopumilaceae	Cand Nitrosopumilus	asv121
+C1	asv124	Thermoplasmatota	Thermoplasmata	Marine Group II	Marine Group II uc	Marine Group II uc	asv124
+C1	asv128	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS5 marine group	asv128
+C1	asv137	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS5 marine group	asv137
+C1	asv142	Nitrospinota	Nitrospinia	Nitrospinales	Nitrospinaceae	Nitrospina	asv142
+C1	asv150	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade III	Clade III uc	asv150
+C1	asv165	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Moraxellaceae	Psychrobacter	asv165
+C1	asv168	Nitrospinota	Nitrospinia	Nitrospinales	Nitrospinaceae	LS-NOB	asv168
+C1	asv185	Dadabacteria	Dadabacteriia	Dadabacteriales	Dadabacteriales uc	Dadabacteriales uc	asv185
+C1	asv190	Proteobacteria	Gammaproteobacteria	Steroidobacterales	Woeseiaceae	Woeseia	asv190
+C1	asv196	Proteobacteria	Alphaproteobacteria	Rhodospirillales	AEGEAN-169 marine group	AEGEAN-169 marine group uc	asv196
+C1	asv200	Thermoplasmatota	Thermoplasmata	Marine Group II	Marine Group II uc	Marine Group II uc	asv200
+C1	asv209	Acidobacteriota	Vicinamibacteria	Vicinamibacterales	Vicinamibacteraceae	Vicinamibacteraceae uc	asv209
+C1	asv216	Actinobacteriota	Actinobacteria	PeM15	PeM15 uc	PeM15 uc	asv216
+C1	asv233	Thermoplasmatota	Thermoplasmata	Marine Group II	Marine Group II uc	Marine Group II uc	asv233
+C1	asv276	Proteobacteria	Gammaproteobacteria	Burkholderiales	Methylophilaceae	OM43 clade	asv276
+C1	asv320	Verrucomicrobiota	Verrucomicrobiae	Arctic97B-4 marine group	Arctic97B-4 marine group uc	Arctic97B-4 marine group uc	asv320
+C1	asv330	Bacteroidota	Bacteroidia	Flavobacteriales	NS7 marine group	NS7 marine group uc	asv330
+C1	asv344	Chloroflexi	Dehalococcoidia	SAR202 clade	SAR202 clade uc	SAR202 clade uc	asv344
+C1	asv395	Marinimicrobia (SAR406 clade)	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	asv395
+C1	asv400	Thermoplasmatota	Thermoplasmata	Marine Group II	Marine Group II uc	Marine Group II uc	asv400
+C1	asv404	Gemmatimonadota	BD2-11 terrestrial group	BD2-11 terrestrial group uc	BD2-11 terrestrial group uc	BD2-11 terrestrial group uc	asv404
+C1	asv436	Actinobacteriota	Acidimicrobiia	Microtrichales	Microtrichaceae	Sva0996 marine group	asv436
+C1	asv438	Thermoplasmatota	Thermoplasmata	Marine Group II	Marine Group II uc	Marine Group II uc	asv438
+C1	asv439	Chloroflexi	Dehalococcoidia	SAR202 clade	SAR202 clade uc	SAR202 clade uc	asv439
+C1	asv441	Acidobacteriota	Vicinamibacteria	Vicinamibacterales	Vicinamibacterales uc	Vicinamibacterales uc	asv441
+C1	asv461	Proteobacteria	Gammaproteobacteria	EPR3968-O8a-Bc78	EPR3968-O8a-Bc78 uc	EPR3968-O8a-Bc78 uc	asv461
+C1	asv469	Thermoplasmatota	Thermoplasmata	Marine Group II	Marine Group II uc	Marine Group II uc	asv469
+C1	asv476	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv476
+C1	asv527	Bacteroidota	Bacteroidia	Flavobacteriales	NS9 marine group	NS9 marine group uc	asv527
+C1	asv560	Marinimicrobia (SAR406 clade)	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	asv560
+C1	asv590	Actinobacteriota	Acidimicrobiia	Actinomarinales	Actinomarinaceae	Cand Actinomarina	asv590
+C1	asv650	SAR324 clade(Marine group B)	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	asv650
+C1	asv656	Proteobacteria	Gammaproteobacteria	Burkholderiales	Nitrosomonadaceae	Nitrosomonas	asv656
+C1	asv658	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade IV	Clade IV uc	asv658
+C1	asv676	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS5 marine group	asv676
+C1	asv691	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Rhodobacteraceae	Rhodobacteraceae uc	asv691
+C1	asv750	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospiraceae uc	asv750
+C1	asv787	Nitrospinota	Nitrospinia	Nitrospinales	Nitrospinaceae	Nitrospina	asv787
+C1	asv820	Bacteroidota	Bacteroidia	Flavobacteriales	NS7 marine group	NS7 marine group uc	asv820
+C1	asv852	Chloroflexi	Dehalococcoidia	SAR202 clade	SAR202 clade uc	SAR202 clade uc	asv852
+C1	asv854	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv854
+C1	asv878	Proteobacteria	Gammaproteobacteria	Pseudomonadales	SAR86 clade	SAR86 clade uc	asv878
+C1	asv965	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospiraceae uc	asv965
+C1	asv966	Chloroflexi	JG30-KF-CM66	JG30-KF-CM66 uc	JG30-KF-CM66 uc	JG30-KF-CM66 uc	asv966
+C1	asv1000	Bacteroidota	Bacteroidia	Flavobacteriales	NS9 marine group	NS9 marine group uc	asv1000
+C1	asv1005	Proteobacteria	Alphaproteobacteria	Parvibaculales	Parvibaculaceae	Parvibaculaceae uc	asv1005
+C1	asv1063	Proteobacteria	Alphaproteobacteria	Parvibaculales	Parvibaculaceae	Parvibaculaceae uc	asv1063
+C1	asv1102	Bacteroidota	Bacteroidia	Flavobacteriales	NS9 marine group	NS9 marine group uc	asv1102
+C1	asv1122	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Pseudohongiellaceae	Pseudohongiella	asv1122
+C1	asv1132	Planctomycetota	Phycisphaerae	Phycisphaerales	Phycisphaeraceae	JL-ETNP-F27	asv1132
+C1	asv1206	SAR324 clade(Marine group B)	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	asv1206
+C1	asv1223	Actinobacteriota	Actinobacteria	Micrococcales	Microbacteriaceae	ML602J-51	asv1223
+C1	asv1296	Planctomycetota	Planctomycetes	Planctomycetales	Gimesiaceae	Gimesiaceae uc	asv1296
+C1	asv1313	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Rhodobacteraceae	Pseudorhodobacter	asv1313
+C1	asv1317	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Moraxellaceae	Psychrobacter	asv1317
+C1	asv1360	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS5 marine group	asv1360
+C1	asv1367	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv1367
+C1	asv1369	Proteobacteria	Alphaproteobacteria	Puniceispirillales	SAR116 clade	SAR116 clade uc	asv1369
+C1	asv1380	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv1380
+C1	asv1399	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Rhodobacteraceae	Rhodobacteraceae uc	asv1399
+C1	asv1426	Bacteroidota	Bacteroidia	Flavobacteriales	Crocinitomicaceae	Crocinitomix	asv1426
+C1	asv1458	Actinobacteriota	Acidimicrobiia	Actinomarinales	Actinomarinaceae	Cand Actinomarina	asv1458
+C1	asv1487	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv1487
+C1	asv1536	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade III	Clade III uc	asv1536
+C1	asv1546	Proteobacteria	Gammaproteobacteria	Xanthomonadales	Xanthomonadaceae	Stenotrophomonas	asv1546
+C1	asv1550	Marinimicrobia (SAR406 clade)	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	asv1550
+C1	asv1576	Proteobacteria	Gammaproteobacteria	Ga0077536	Ga0077536 uc	Ga0077536 uc	asv1576
+C1	asv1609	Thermoplasmatota	Thermoplasmata	Marine Group II	Marine Group II uc	Marine Group II uc	asv1609
+C1	asv1622	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Sphingomonadaceae	Erythrobacter	asv1622
+C1	asv1724	Proteobacteria	Gammaproteobacteria	Pseudomonadales	SAR86 clade	SAR86 clade uc	asv1724
+C1	asv1753	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv1753
+C1	asv1763	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv1763
+C1	asv1787	Proteobacteria	Gammaproteobacteria	Steroidobacterales	Woeseiaceae	Woeseia	asv1787
+C1	asv1826	Proteobacteria	Alphaproteobacteria	Defluviicoccales	Defluviicoccales uc	Defluviicoccales uc	asv1826
+C1	asv1847	Actinobacteriota	Actinobacteria	Corynebacteriales	Nocardiaceae	Rhodococcus	asv1847
+C1	asv1858	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv1858
+C1	asv2001	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS5 marine group	asv2001
+C1	asv2030	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv2030
+C1	asv2150	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv2150
+C1	asv2328	Thermoplasmatota	Thermoplasmata	Marine Group II	Marine Group II uc	Marine Group II uc	asv2328
+C1	asv2373	Proteobacteria	Gammaproteobacteria	Pseudomonadales	SAR86 clade	SAR86 clade uc	asv2373
+C1	asv2401	Planctomycetota	Planctomycetes	Planctomycetales	Rubinisphaeraceae	Rubinisphaeraceae uc	asv2401
+C1	asv2490	Bacteroidota	Bacteroidia	Flavobacteriales	NS9 marine group	NS9 marine group uc	asv2490
+C1	asv2626	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria uc	Alphaproteobacteria uc	Alphaproteobacteria uc	asv2626
+C1	asv2643	Firmicutes	Bacilli	Entomoplasmatales	Entomoplasmatales Incertae Sedis	Cand Hepatoplasma	asv2643
+C1	asv2648	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospiraceae uc	asv2648
+C1	asv2659	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv2659
+C1	asv2763	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Thioglobaceae	Thioglobaceae uc	asv2763
+C1	asv2874	Proteobacteria	Alphaproteobacteria	Rickettsiales	Fokiniaceae	MD3-55	asv2874
+C1	asv2880	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv2880
+C1	asv3029	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv3029
+C1	asv3124	Proteobacteria	Alphaproteobacteria	Puniceispirillales	SAR116 clade	SAR116 clade uc	asv3124
+C1	asv3162	Acidobacteriota	Vicinamibacteria	Vicinamibacterales	Vicinamibacterales uc	Vicinamibacterales uc	asv3162
+C1	asv3313	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Rhodospirillaceae	Rhodospirillaceae uc	asv3313
+C1	asv3416	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv3416
+C1	asv3762	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv3762
+C1	asv3763	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv3763
+C1	asv3766	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv3766
+C1	asv3793	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospiraceae uc	asv3793
+C1	asv3828	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv3828
+C1	asv3832	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS5 marine group	asv3832
+C1	asv3836	Proteobacteria	Alphaproteobacteria	Puniceispirillales	SAR116 clade	SAR116 clade uc	asv3836
+C1	asv3871	Bacteroidota	Bacteroidia	Flavobacteriales	Cryomorphaceae	Cryomorphaceae uc	asv3871
+C1	asv3896	Proteobacteria	Alphaproteobacteria	Rickettsiales	Rickettsiaceae	Cand Megaira	asv3896
+C1	asv3966	Bacteroidota	Bacteroidia	Flavobacteriales	Cryomorphaceae	Vicingus	asv3966
+C1	asv3975	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv3975
+C1	asv4276	Marinimicrobia (SAR406 clade)	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	asv4276
+C1	asv4614	Proteobacteria	Alphaproteobacteria	Rhizobiales	Beijerinckiaceae	Methylobacterium-Methylorubrum	asv4614
+C1	asv4633	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospiraceae uc	asv4633
+C1	asv4995	Proteobacteria	Alphaproteobacteria	Puniceispirillales	SAR116 clade	Cand Puniceispirillum	asv4995
+C1	asv5058	Proteobacteria	Alphaproteobacteria	Puniceispirillales	SAR116 clade	SAR116 clade uc	asv5058
+C1	asv5156	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Rhodobacteraceae	Sulfitobacter	asv5156
+C1	asv5302	Verrucomicrobiota	Verrucomicrobiae	Opitutales	Puniceicoccaceae	Verruc-01	asv5302
+C1	asv5342	Proteobacteria	Gammaproteobacteria	Pseudomonadales	SAR86 clade	SAR86 clade uc	asv5342
+C1	asv5372	Proteobacteria	Gammaproteobacteria	Francisellales	Francisellaceae	Francisellaceae uc	asv5372
+C1	asv5440	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Moraxellaceae	Enhydrobacter	asv5440
+C1	asv5454	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv5454
+C1	asv5582	Proteobacteria	Gammaproteobacteria	Pseudomonadales	SAR86 clade	SAR86 clade uc	asv5582
+C1	asv5900	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS5 marine group	asv5900
+C1	asv6040	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv6040
+C1	asv6113	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospiraceae uc	asv6113
+C1	asv6142	Proteobacteria	Gammaproteobacteria	Burkholderiales	Methylophilaceae	OM43 clade	asv6142
+C1	asv6254	Proteobacteria	Gammaproteobacteria	Pseudomonadales	SAR86 clade	SAR86 clade uc	asv6254
+C1	asv6362	Proteobacteria	Alphaproteobacteria	Rickettsiales	Rickettsiales uc	Rickettsiales uc	asv6362
+C1	asv6545	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv6545
+C1	asv6826	Proteobacteria	Gammaproteobacteria	Francisellales	Francisellaceae	Francisellaceae uc	asv6826
+C1	asv7150	Proteobacteria	Alphaproteobacteria	Rhizobiales	Rhizobiaceae	Pseudorhizobium	asv7150
+C1	asv8484	Proteobacteria	Gammaproteobacteria	Pseudomonadales	SAR86 clade	SAR86 clade uc	asv8484
+C1	asv10666	Actinobacteriota	Actinobacteria	Micrococcales	Microbacteriaceae	ML602J-51	asv10666
+C1	asv11493	Firmicutes	Bacilli	Bacillales	Planococcaceae	Planomicrobium	asv11493
+C1	asv12129	Proteobacteria	Gammaproteobacteria	Francisellales	Francisellaceae	Francisella	asv12129
+C1	asv14039	Bacteroidota	Bacteroidia	Chitinophagales	Saprospiraceae	Saprospiraceae uc	asv14039
+C1	asv14040	Proteobacteria	Gammaproteobacteria	Burkholderiales	Comamonadaceae	Hydrogenophaga	asv14040
+C2	asv69	Proteobacteria	Gammaproteobacteria	Pseudomonadales	SAR86 clade	SAR86 clade uc	asv69
+C2	asv83	Crenarchaeota	Nitrososphaeria	Nitrosopumilales	Nitrosopumilaceae	Cand Nitrosopumilus	asv83
+C2	asv240	SAR324 clade(Marine group B)	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	asv240
+C2	asv254	Proteobacteria	Gammaproteobacteria	Pseudomonadales	SAR86 clade	SAR86 clade uc	asv254
+C2	asv346	Marinimicrobia (SAR406 clade)	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	asv346
+C2	asv484	Nitrospinota	Nitrospinia	Nitrospinales	Nitrospinaceae	LS-NOB	asv484
+C2	asv492	Proteobacteria	Gammaproteobacteria	Pseudomonadales	SAR86 clade	SAR86 clade uc	asv492
+C2	asv683	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS4 marine group	asv683
+C2	asv758	SAR324 clade(Marine group B)	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	asv758
+C2	asv813	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv813
+C2	asv845	Proteobacteria	Proteobacteria uc	Proteobacteria uc	Proteobacteria uc	Proteobacteria uc	asv845
+C2	asv881	Proteobacteria	Gammaproteobacteria	Pseudomonadales	SAR86 clade	SAR86 clade uc	asv881
+C2	asv930	Proteobacteria	Gammaproteobacteria	Ectothiorhodospirales	Ectothiorhodospiraceae	Ectothiorhodospiraceae uc	asv930
+C2	asv982	Proteobacteria	Gammaproteobacteria	Burkholderiales	Methylophilaceae	OM43 clade	asv982
+C2	asv1009	Proteobacteria	Gammaproteobacteria	Ectothiorhodospirales	Ectothiorhodospiraceae	Ectothiorhodospiraceae uc	asv1009
+C2	asv1159	Actinobacteriota	Acidimicrobiia	Microtrichales	Microtrichaceae	Sva0996 marine group	asv1159
+C2	asv1617	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospiraceae uc	asv1617
+C2	asv1901	Proteobacteria	Gammaproteobacteria	Pseudomonadales	SAR86 clade	SAR86 clade uc	asv1901
+C2	asv2040	Proteobacteria	Gammaproteobacteria	Pseudomonadales	SAR86 clade	SAR86 clade uc	asv2040
+C2	asv2177	Proteobacteria	Gammaproteobacteria	Burkholderiales	Methylophilaceae	OM43 clade	asv2177
+C2	asv2307	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospiraceae uc	asv2307
+C2	asv3474	Proteobacteria	Gammaproteobacteria	Pseudomonadales	SAR86 clade	SAR86 clade uc	asv3474
+C3	asv18	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS2b marine group	asv18
+C3	asv38	Proteobacteria	Gammaproteobacteria	Pseudomonadales	SAR86 clade	SAR86 clade uc	asv38
+C3	asv160	Proteobacteria	Alphaproteobacteria	Parvibaculales	OCS116 clade	OCS116 clade uc	asv160
+C3	asv396	Proteobacteria	Gammaproteobacteria	Pseudomonadales	SAR86 clade	SAR86 clade uc	asv396
+C3	asv425	Bacteroidota	Bacteroidia	Flavobacteriales	NS9 marine group	NS9 marine group uc	asv425
+C3	asv536	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	Aquibacter	asv536
+C3	asv561	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria uc	Alphaproteobacteria uc	Alphaproteobacteria uc	asv561
+C3	asv765	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospiraceae uc	asv765
+C3	asv896	Proteobacteria	Gammaproteobacteria	Ga0077536	Ga0077536 uc	Ga0077536 uc	asv896
+C3	asv1343	Proteobacteria	Alphaproteobacteria	Rhodospirillales	AEGEAN-169 marine group	AEGEAN-169 marine group uc	asv1343
+C3	asv1370	Proteobacteria	Alphaproteobacteria	Rhodospirillales	AEGEAN-169 marine group	AEGEAN-169 marine group uc	asv1370
+C3	asv1372	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv1372
+C3	asv1952	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS2b marine group	asv1952
+C3	asv2378	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospiraceae uc	asv2378
+C3	asv4398	Proteobacteria	Alphaproteobacteria	Rhodospirillales	AEGEAN-169 marine group	AEGEAN-169 marine group uc	asv4398
+C4	asv1	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv1
+C4	asv2	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Thioglobaceae	SUP05 cluster	asv2
+C4	asv6	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Nitrincolaceae	Nitrincolaceae uc	asv6
+C4	asv8	Crenarchaeota	Nitrososphaeria	Nitrosopumilales	Nitrosopumilaceae	Cand Nitrosopumilus	asv8
+C4	asv21	Bacteroidota	Bacteroidia	Flavobacteriales	NS9 marine group	NS9 marine group uc	asv21
+C4	asv39	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv39
+C4	asv41	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv41
+C4	asv50	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Pseudohongiellaceae	Pseudohongiella	asv50
+C4	asv53	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Nitrincolaceae	Nitrincolaceae uc	asv53
+C4	asv57	Proteobacteria	Alphaproteobacteria	Puniceispirillales	SAR116 clade	SAR116 clade uc	asv57
+C4	asv59	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv59
+C4	asv61	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ib	asv61
+C4	asv71	Proteobacteria	Gammaproteobacteria	Burkholderiales	Methylophilaceae	OM43 clade	asv71
+C4	asv80	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ib	asv80
+C4	asv122	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ib	asv122
+C4	asv134	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv134
+C4	asv138	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Porticoccaceae	SAR92 clade	asv138
+C4	asv144	Proteobacteria	Gammaproteobacteria	Burkholderiales	Methylophilaceae	OM43 clade	asv144
+C4	asv158	Proteobacteria	Alphaproteobacteria	Defluviicoccales	Defluviicoccales uc	Defluviicoccales uc	asv158
+C4	asv170	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv170
+C4	asv172	Proteobacteria	Gammaproteobacteria	Thiotrichales	Thiotrichaceae	Thiotrichaceae uc	asv172
+C4	asv183	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv183
+C4	asv202	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv202
+C4	asv224	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv224
+C4	asv231	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ib	asv231
+C4	asv244	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Porticoccaceae	Porticoccus	asv244
+C4	asv251	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv251
+C4	asv265	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv265
+C4	asv297	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv297
+C4	asv303	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv303
+C4	asv318	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv318
+C4	asv332	Proteobacteria	Gammaproteobacteria	Burkholderiales	Methylophilaceae	OM43 clade	asv332
+C4	asv378	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv378
+C4	asv398	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade IV	Clade IV uc	asv398
+C4	asv411	Proteobacteria	Gammaproteobacteria	Burkholderiales	Methylophilaceae	OM43 clade	asv411
+C4	asv453	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv453
+C4	asv473	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv473
+C4	asv475	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv475
+C4	asv485	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ib	asv485
+C4	asv505	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv505
+C4	asv510	Marinimicrobia (SAR406 clade)	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	asv510
+C4	asv516	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv516
+C4	asv533	Proteobacteria	Gammaproteobacteria	Burkholderiales	Methylophilaceae	OM43 clade	asv533
+C4	asv540	Proteobacteria	Gammaproteobacteria	Burkholderiales	Methylophilaceae	OM43 clade	asv540
+C4	asv567	Proteobacteria	Gammaproteobacteria	Burkholderiales	Methylophilaceae	OM43 clade	asv567
+C4	asv593	Proteobacteria	Gammaproteobacteria	Burkholderiales	Methylophilaceae	OM43 clade	asv593
+C4	asv610	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv610
+C4	asv627	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv627
+C4	asv630	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv630
+C4	asv638	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS5 marine group	asv638
+C4	asv639	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv639
+C4	asv648	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv648
+C4	asv688	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ib	asv688
+C4	asv703	Proteobacteria	Alphaproteobacteria	Defluviicoccales	Defluviicoccales uc	Defluviicoccales uc	asv703
+C4	asv729	Bacteroidota	Bacteroidia	Flavobacteriales	NS9 marine group	NS9 marine group uc	asv729
+C4	asv736	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv736
+C4	asv766	Proteobacteria	Gammaproteobacteria	Burkholderiales	Methylophilaceae	OM43 clade	asv766
+C4	asv824	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Thioglobaceae	SUP05 cluster	asv824
+C4	asv843	Actinobacteriota	Acidimicrobiia	Microtrichales	Microtrichaceae	Sva0996 marine group	asv843
+C4	asv857	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv857
+C4	asv900	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv900
+C4	asv923	Proteobacteria	Gammaproteobacteria	Pseudomonadales	OM182 clade	OM182 clade uc	asv923
+C4	asv947	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Nitrincolaceae	Nitrincolaceae uc	asv947
+C4	asv983	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv983
+C4	asv992	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv992
+C4	asv999	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS5 marine group	asv999
+C4	asv1019	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv1019
+C4	asv1125	Bacteroidota	Bacteroidia	Flavobacteriales	NS9 marine group	NS9 marine group uc	asv1125
+C4	asv1177	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv1177
+C4	asv1309	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv1309
+C4	asv1336	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospira	asv1336
+C4	asv1361	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv1361
+C4	asv1382	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv1382
+C4	asv1450	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv1450
+C4	asv1456	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv1456
+C4	asv1464	Proteobacteria	Gammaproteobacteria	Pseudomonadales	OM182 clade	OM182 clade uc	asv1464
+C4	asv1472	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospiraceae uc	asv1472
+C4	asv1486	Proteobacteria	Alphaproteobacteria	AT-s3-44	AT-s3-44 uc	AT-s3-44 uc	asv1486
+C4	asv1555	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Porticoccaceae	Porticoccus	asv1555
+C4	asv1603	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Porticoccaceae	SAR92 clade	asv1603
+C4	asv1645	Proteobacteria	Alphaproteobacteria	Puniceispirillales	SAR116 clade	SAR116 clade uc	asv1645
+C4	asv1662	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv1662
+C4	asv1683	Proteobacteria	Alphaproteobacteria	Defluviicoccales	Defluviicoccales uc	Defluviicoccales uc	asv1683
+C4	asv1765	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Rhodobacteraceae	Rhodobacteraceae uc	asv1765
+C4	asv2132	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Porticoccaceae	SAR92 clade	asv2132
+C4	asv2173	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv2173
+C4	asv2207	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospiraceae uc	asv2207
+C4	asv2359	Bacteroidota	Bacteroidia	Flavobacteriales	NS9 marine group	NS9 marine group uc	asv2359
+C4	asv2389	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv2389
+C4	asv2408	Proteobacteria	Gammaproteobacteria	Pseudomonadales	OM182 clade	OM182 clade uc	asv2408
+C4	asv2831	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv2831
+C4	asv3106	Proteobacteria	Alphaproteobacteria	Puniceispirillales	SAR116 clade	SAR116 clade uc	asv3106
+C4	asv3297	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Nitrincolaceae	Nitrincolaceae uc	asv3297
+C4	asv3543	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv3543
+C4	asv3578	Proteobacteria	Gammaproteobacteria	Burkholderiales	Methylophilaceae	OM43 clade	asv3578
+C4	asv3604	Proteobacteria	Gammaproteobacteria	Pseudomonadales	OM182 clade	OM182 clade uc	asv3604
+C4	asv3792	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospiraceae uc	asv3792
+C4	asv4232	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv4232
+C4	asv4561	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv4561
+C4	asv4785	Proteobacteria	Gammaproteobacteria	Burkholderiales	Methylophilaceae	OM43 clade	asv4785
+C5	asv10	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS5 marine group	asv10
+C5	asv44	Proteobacteria	Gammaproteobacteria	Enterobacterales	Shewanellaceae	Shewanella	asv44
+C5	asv77	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	Formosa	asv77
+C5	asv246	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS5 marine group	asv246
+C5	asv327	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS5 marine group	asv327
+C5	asv409	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade III	Clade III uc	asv409
+C5	asv412	Proteobacteria	Gammaproteobacteria	Pseudomonadales	KI89A clade	KI89A clade uc	asv412
+C5	asv460	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS5 marine group	asv460
+C5	asv807	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv807
+C5	asv876	Bacteroidota	Bacteroidia	Flavobacteriales	NS7 marine group	NS7 marine group uc	asv876
+C5	asv972	Proteobacteria	Alphaproteobacteria	Puniceispirillales	SAR116 clade	SAR116 clade uc	asv972
+C5	asv1010	Proteobacteria	Alphaproteobacteria	Puniceispirillales	SAR116 clade	SAR116 clade uc	asv1010
+C5	asv1243	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS5 marine group	asv1243
+C5	asv1304	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv1304
+C5	asv1497	Proteobacteria	Gammaproteobacteria	Pseudomonadales	KI89A clade	KI89A clade uc	asv1497
+C5	asv2165	Proteobacteria	Gammaproteobacteria	Pseudomonadales	SAR86 clade	SAR86 clade uc	asv2165
+C5	asv2604	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	Formosa	asv2604
+C5	asv2670	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Pseudohongiellaceae	Pseudohongiella	asv2670
+C5	asv4249	Proteobacteria	Gammaproteobacteria	Pseudomonadales	OM182 clade	OM182 clade uc	asv4249
+C5	asv4293	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospiraceae uc	asv4293
+C5	asv4466	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospiraceae uc	asv4466
+C5	asv5468	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade III	Clade III uc	asv5468
+C5	asv5547	Proteobacteria	Alphaproteobacteria	Rickettsiales	AB1	AB1 uc	asv5547
+C5	asv9578	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv9578
+C6	asv52	Proteobacteria	Gammaproteobacteria	Enterobacterales	Pseudoalteromonadaceae	Pseudoalteromonas	asv52
+C6	asv60	Verrucomicrobiota	Verrucomicrobiae	Opitutales	Puniceicoccaceae	Lentimonas	asv60
+C6	asv73	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	Polaribacter	asv73
+C6	asv180	Proteobacteria	Gammaproteobacteria	Nitrosococcales	Methylophagaceae	Methylophaga	asv180
+C6	asv232	Bacteroidota	Bacteroidia	Flavobacteriales	NS9 marine group	NS9 marine group uc	asv232
+C6	asv390	Marinimicrobia (SAR406 clade)	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	asv390
+C6	asv479	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Pseudomonadaceae	Pseudomonas	asv479
+C6	asv503	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Halieaceae	Marimicrobium	asv503
+C6	asv657	Actinobacteriota	Actinobacteria	Actinobacteria uc	Actinobacteria uc	Actinobacteria uc	asv657
+C6	asv803	Planctomycetota	Phycisphaerae	Phycisphaerales	Phycisphaeraceae	CL500-3	asv803
+C6	asv903	Bacteroidota	Bacteroidia	Flavobacteriales	NS7 marine group	NS7 marine group uc	asv903
+C6	asv1057	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae	Rhodopirellula	asv1057
+C6	asv1085	Bacteroidota	Bacteroidia	Flavobacteriales	Cryomorphaceae	Cryomorphaceae uc	asv1085
+C6	asv1098	Chloroflexi	Dehalococcoidia	SAR202 clade	SAR202 clade uc	SAR202 clade uc	asv1098
+C6	asv1155	Bacteroidota	Bacteroidia	Flavobacteriales	NS9 marine group	NS9 marine group uc	asv1155
+C6	asv1553	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv1553
+C6	asv1871	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv1871
+C6	asv1902	Desulfobacterota	Desulfobacterota uc	Desulfobacterota uc	Desulfobacterota uc	Desulfobacterota uc	asv1902
+C6	asv1962	Proteobacteria	Alphaproteobacteria	SAR11 clade	SAR11 clade uc	SAR11 clade uc	asv1962
+C6	asv2159	NB1-j	NB1-j uc	NB1-j uc	NB1-j uc	NB1-j uc	asv2159
+C6	asv2300	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospiraceae uc	asv2300
+C6	asv2474	Proteobacteria	Gammaproteobacteria	Enterobacterales	Shewanellaceae	Shewanella	asv2474
+C6	asv2515	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Sphingomonadaceae	Sphingobium	asv2515
+C6	asv2945	Proteobacteria	Gammaproteobacteria	Enterobacterales	Pseudoalteromonadaceae	Pseudoalteromonas	asv2945
+C6	asv2961	Planctomycetota	Pla4 lineage	Pla4 lineage uc	Pla4 lineage uc	Pla4 lineage uc	asv2961
+C6	asv2989	Bacteroidota	Bacteroidia	Flavobacteriales	NS9 marine group	NS9 marine group uc	asv2989
+C6	asv3028	Planctomycetota	Planctomycetes	Planctomycetales	Rubinisphaeraceae	Rubinisphaeraceae uc	asv3028
+C6	asv3113	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Pseudomonadaceae	Pseudomonas	asv3113
+C6	asv3323	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Moraxellaceae	Acinetobacter	asv3323
+C6	asv3586	Bdellovibrionota	Oligoflexia	Oligoflexales	Oligoflexaceae	Oligoflexaceae uc	asv3586
+C6	asv3639	Proteobacteria	Gammaproteobacteria	Francisellales	Francisellaceae	Francisellaceae uc	asv3639
+C6	asv4396	Proteobacteria	Gammaproteobacteria	Enterobacterales	Pseudoalteromonadaceae	Pseudoalteromonas	asv4396
+C6	asv4596	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	Polaribacter	asv4596
+C6	asv4934	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Sphingomonadaceae	Blastomonas	asv4934
+C6	asv4949	Bacteroidota	Bacteroidia	Flavobacteriales	Cryomorphaceae	Cryomorphaceae uc	asv4949
+C6	asv5652	Bdellovibrionota	Bdellovibrionia	Bdellovibrionales	Bdellovibrionaceae	OM27 clade	asv5652
+C6	asv5784	Proteobacteria	Gammaproteobacteria	Legionellales	Legionellaceae	Legionellaceae uc	asv5784
+C6	asv6101	Bacteroidota	Bacteroidia	Flavobacteriales	Crocinitomicaceae	Fluviicola	asv6101
+C6	asv6329	Verrucomicrobiota	Verrucomicrobiae	Verrucomicrobiales	DEV007	DEV007 uc	asv6329
+C6	asv6412	Proteobacteria	Gammaproteobacteria	Legionellales	Legionellaceae	Legionellaceae uc	asv6412
+C6	asv6909	Proteobacteria	Alphaproteobacteria	Caulobacterales	Caulobacteraceae	Phenylobacterium	asv6909
+C6	asv7275	Bacteroidota	Bacteroidia	Chitinophagales	Saprospiraceae	Aureispira	asv7275
+C6	asv7737	Proteobacteria	Alphaproteobacteria	Rickettsiales	Rickettsiales uc	Rickettsiales uc	asv7737
+C6	asv8941	Proteobacteria	Alphaproteobacteria	Rickettsiales	Rickettsiales uc	Rickettsiales uc	asv8941
+C6	asv8950	Proteobacteria	Gammaproteobacteria	Gammaproteobacteria uc	Gammaproteobacteria uc	Gammaproteobacteria uc	asv8950
+C6	asv9064	Bacteroidota	Bacteroidia	Bacteroidales	Bacteroidaceae	Bacteroides	asv9064
+C6	asv9121	Firmicutes	Clostridia	Peptostreptococcales-Tissierellales	Family XI	Family XI uc	asv9121
+C6	asv10535	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Sphingomonadaceae	Sphingomonas	asv10535
+C6	asv11029	Proteobacteria	Alphaproteobacteria	Puniceispirillales	SAR116 clade	Cand Puniceispirillum	asv11029
+C6	asv12158	Verrucomicrobiota	Verrucomicrobiae	Verrucomicrobiales	Rubritaleaceae	Rubritalea	asv12158
+C6	asv12950	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Moraxellaceae	Psychrobacter	asv12950
+C6	asv14071	Proteobacteria	Gammaproteobacteria	Gammaproteobacteria uc	Gammaproteobacteria uc	Gammaproteobacteria uc	asv14071
+C6	asv14072	Bacteroidota	Bacteroidia	Chitinophagales	Saprospiraceae	Saprospiraceae uc	asv14072
+C6	asv14073	Proteobacteria	Alphaproteobacteria	Alphaproteobacteria uc	Alphaproteobacteria uc	Alphaproteobacteria uc	asv14073
+C6	asv14074	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae	Rhodopirellula	asv14074
+C7	asv99	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Rhodobacteraceae	Roseobacter clade NAC11-7 lineage	asv99
+C7	asv595	Bacteroidota	Bacteroidia	Flavobacteriales	Cryomorphaceae	Cryomorphaceae uc	asv595
+C7	asv705	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Rhodobacteraceae	Ascidiaceihabitans	asv705
+C7	asv763	Bacteroidota	Bacteroidia	Flavobacteriales	NS9 marine group	NS9 marine group uc	asv763
+C7	asv963	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS4 marine group	asv963
+C7	asv1115	Planctomycetota	Phycisphaerae	Phycisphaerales	Phycisphaeraceae	FS140-16B-02 marine group	asv1115
+C7	asv1220	Proteobacteria	Alphaproteobacteria	AT-s3-44	AT-s3-44 uc	AT-s3-44 uc	asv1220
+C7	asv1275	Proteobacteria	Gammaproteobacteria	Enterobacterales	Pseudoalteromonadaceae	Pseudoalteromonas	asv1275
+C7	asv1757	Proteobacteria	Alphaproteobacteria	Rhodospirillales	AEGEAN-169 marine group	AEGEAN-169 marine group uc	asv1757
+C7	asv2153	Proteobacteria	Gammaproteobacteria	Gammaproteobacteria uc	Gammaproteobacteria uc	Gammaproteobacteria uc	asv2153
+C7	asv3035	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae	Rubripirellula	asv3035
+C7	asv3089	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae	Blastopirellula	asv3089
+C7	asv3411	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Porticoccaceae	SAR92 clade	asv3411
+C7	asv3663	Planctomycetota	Phycisphaerae	Phycisphaerales	Phycisphaeraceae	CL500-3	asv3663
+C7	asv4549	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv4549
+C7	asv4645	Proteobacteria	Gammaproteobacteria	Burkholderiales	Nitrosomonadaceae	IS-44	asv4645
+C7	asv5432	Proteobacteria	Gammaproteobacteria	Pseudomonadales	SAR86 clade	SAR86 clade uc	asv5432
+C7	asv5745	Proteobacteria	Gammaproteobacteria	Legionellales	Legionellaceae	Legionellaceae uc	asv5745
+C8	asv16	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Rhodobacteraceae	Planktomarina	asv16
+C8	asv46	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Porticoccaceae	SAR92 clade	asv46
+C8	asv51	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	Flavobacteriaceae uc	asv51
+C8	asv66	Bacteroidota	Bacteroidia	Cytophagales	Cyclobacteriaceae	Marinoscillum	asv66
+C8	asv75	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Rhodobacteraceae	Planktomarina	asv75
+C8	asv90	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Halieaceae	OM60(NOR5) clade	asv90
+C8	asv118	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	Flavobacteriaceae uc	asv118
+C8	asv169	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospira	asv169
+C8	asv255	Proteobacteria	Gammaproteobacteria	Pseudomonadales	OM182 clade	OM182 clade uc	asv255
+C8	asv289	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Rhodobacteraceae	Planktomarina	asv289
+C8	asv401	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS5 marine group	asv401
+C8	asv424	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae	Pirellulaceae uc	asv424
+C8	asv454	Proteobacteria	Gammaproteobacteria	Thiotrichales	Thiotrichaceae	Thiotrichaceae uc	asv454
+C8	asv463	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Rhodobacteraceae	Ascidiaceihabitans	asv463
+C8	asv482	Bacteroidota	Bacteroidia	Flavobacteriales	Cryomorphaceae	Cryomorphaceae uc	asv482
+C8	asv521	Bacteroidota	Bacteroidia	Flavobacteriales	Cryomorphaceae	Cryomorphaceae uc	asv521
+C8	asv545	SAR324 clade(Marine group B)	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	asv545
+C8	asv562	Proteobacteria	Gammaproteobacteria	SS1-B-07-19	SS1-B-07-19 uc	SS1-B-07-19 uc	asv562
+C8	asv661	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	Ulvibacter	asv661
+C8	asv704	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ib	asv704
+C8	asv784	Planctomycetota	Phycisphaerae	Phycisphaerales	Phycisphaeraceae	CL500-3	asv784
+C8	asv927	Bacteroidota	Bacteroidia	Cytophagales	Cytophagales uc	Cytophagales uc	asv927
+C8	asv961	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospiraceae uc	asv961
+C8	asv1295	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv1295
+C8	asv1587	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospira	asv1587
+C8	asv1644	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Rhodobacteraceae	Planktomarina	asv1644
+C8	asv1656	Planctomycetota	Phycisphaerae	Phycisphaerales	Phycisphaeraceae	CL500-3	asv1656
+C8	asv1665	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade I	Clade Ia	asv1665
+C8	asv1916	Bacteroidota	Bacteroidia	Chitinophagales	Chitinophagales uc	Chitinophagales uc	asv1916
+C8	asv1971	Proteobacteria	Alphaproteobacteria	Defluviicoccales	Defluviicoccales uc	Defluviicoccales uc	asv1971
+C8	asv2226	Proteobacteria	Gammaproteobacteria	Steroidobacterales	Woeseiaceae	Woeseia	asv2226
+C8	asv2291	Proteobacteria	Alphaproteobacteria	Defluviicoccales	Defluviicoccales uc	Defluviicoccales uc	asv2291
+C8	asv2321	Proteobacteria	Gammaproteobacteria	Burkholderiales	Methylophilaceae	OM43 clade	asv2321
+C8	asv2388	Proteobacteria	Alphaproteobacteria	SAR11 clade	Clade II	Clade II uc	asv2388
+C8	asv2933	Proteobacteria	Alphaproteobacteria	Thalassobaculales	Nisaeaceae	OM75 clade	asv2933
+C8	asv3301	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	Flavobacteriaceae uc	asv3301
+C8	asv3453	Actinobacteriota	Actinobacteria	Actinobacteria uc	Actinobacteria uc	Actinobacteria uc	asv3453
+C8	asv3774	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	Magnetospira	asv3774
+C8	asv4955	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Litoricolaceae	Litoricola	asv4955
+C8	asv5377	Proteobacteria	Gammaproteobacteria	Arenicellales	Arenicellaceae	Arenicella	asv5377
+C8	asv6516	Actinobacteriota	Actinobacteria	PeM15	PeM15 uc	PeM15 uc	asv6516
+C8	asv7571	Proteobacteria	Gammaproteobacteria	Enterobacterales	Alteromonadaceae	Alteromonas	asv7571

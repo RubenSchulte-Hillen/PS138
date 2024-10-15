@@ -1,0 +1,51 @@
+cluster	Class	Genus	value
+C1	Bacteroidia	Cryomorphaceae uc	2.88
+C1	Bacteroidia	NS5 marine group	1.95
+C1	Gammaproteobacteria	SAR86 clade uc	1.52
+C1	Alphaproteobacteria	SAR116 clade uc	1.19
+C1	Bacteroidia	NS7 marine group uc	0.91
+C1	Alphaproteobacteria	Clade III uc	0.89
+C1	Thermoplasmata	Marine Group II uc	0.85
+C1	Alphaproteobacteria	AEGEAN-169 marine group uc	0.83
+C1	Actinobacteria	PeM15 uc	0.69
+C1	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	0.35
+C1	Alphaproteobacteria	Clade IV uc	0.32
+C2	Gammaproteobacteria	SAR86 clade uc	1.59
+C2	Proteobacteria uc	Proteobacteria uc	0.36
+C3	Bacteroidia	NS2b marine group	1.8
+C3	Alphaproteobacteria	OCS116 clade uc	0.55
+C3	Bacteroidia	NS9 marine group uc	0.33
+C4	Alphaproteobacteria	Clade Ia	12.16
+C4	Gammaproteobacteria	Nitrincolaceae uc	5.51
+C4	Alphaproteobacteria	SAR11 clade uc	3.38
+C4	Gammaproteobacteria	SUP05 cluster	3.08
+C4	Gammaproteobacteria	OM43 clade	2.22
+C4	Bacteroidia	NS9 marine group uc	1.77
+C4	Alphaproteobacteria	SAR116 clade uc	1.45
+C4	Gammaproteobacteria	Pseudohongiella	1.09
+C4	Gammaproteobacteria	SAR92 clade	1.02
+C4	Gammaproteobacteria	Thiotrichaceae uc	0.83
+C4	Alphaproteobacteria	Defluviicoccales uc	0.7
+C4	Alphaproteobacteria	Clade II uc	0.68
+C4	Gammaproteobacteria	Porticoccus	0.67
+C5	Bacteroidia	NS5 marine group	4.5
+C5	Gammaproteobacteria	Shewanella	1.29
+C5	Bacteroidia	Formosa	1.22
+C5	Alphaproteobacteria	Clade III uc	0.48
+C5	Bacteroidia	NS7 marine group uc	0.31
+C6	Verrucomicrobiae	Lentimonas	1.8
+C6	Gammaproteobacteria	Pseudoalteromonas	0.95
+C6	Bacteroidia	Polaribacter	0.92
+C6	Bacteroidia	NS9 marine group uc	0.69
+C6	Gammaproteobacteria	Pseudomonas	0.41
+C6	Bacteroidia	Cryomorphaceae uc	0.18
+C7	Alphaproteobacteria	Roseobacter clade NAC11-7 lineage	0.44
+C7	Bacteroidia	Cryomorphaceae uc	0.29
+C8	Alphaproteobacteria	Planktomarina	4.1
+C8	Bacteroidia	Flavobacteriaceae uc	2.28
+C8	Gammaproteobacteria	SAR92 clade	1.53
+C8	Bacteroidia	Marinoscillum	1.34
+C8	Gammaproteobacteria	OM60(NOR5) clade	1.09
+C8	Bacteroidia	Cryomorphaceae uc	0.86
+C8	Alphaproteobacteria	Magnetospira	0.73
+C8	Bacteroidia	NS5 marine group	0.41

@@ -1,0 +1,2 @@
+"lon"	"lat"	"NO3+NO2_c_mean"	"PO4_c_mean"	"Si(OH)4_c_mean"	"NO2_c_mean"	"NH4_c_mean"	"TDN_c_mean"	"TDP_c_mean"	Relative abundance of signature clusters (%)
+lon	lat	NO3+NO2_c_mean	PO4_c_mean	Si(OH)4_c_mean	NO2_c_mean	NH4_c_mean	TDN_c_mean	TDP_c_mean	50

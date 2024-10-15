@@ -1,0 +1,46 @@
+cluster	Class	Genus	value
+C2	Gammaproteobacteria	OM182 clade uc	1.33
+C5	Alphaproteobacteria	Defluviicoccales uc	4.17
+C5	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	3.01
+C5	Bacteroidia	Crocinitomix	2.37
+C6	Alphaproteobacteria	Clade Ib	43.82
+C6	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	38.32
+C6	Nitrososphaeria	Cand Nitrosopumilus	30.96
+C6	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	30.33
+C6	Gammaproteobacteria	SUP05 cluster	15.84
+C6	Bacteroidia	NS9 marine group uc	11.75
+C6	Acidimicrobiia	Sva0996 marine group	10.62
+C6	Gammaproteobacteria	UBA10353 marine group uc	7.32
+C6	Bacteroidia	NS2b marine group	6.96
+C6	Gammaproteobacteria	Pseudohongiella	6.44
+C6	Nitrospinia	Nitrospina	5.05
+C6	Alphaproteobacteria	Sneathiellaceae uc	4.12
+C6	Alphaproteobacteria	AEGEAN-169 marine group uc	4.01
+C6	Acidimicrobiia	Microtrichaceae uc	3.58
+C6	Dehalococcoidia	SAR202 clade uc	2.65
+C6	Alphaproteobacteria	Limimaricola	2.46
+C8	Marinimicrobia (SAR406 clade) uc	Marinimicrobia (SAR406 clade) uc	48.01
+C8	SAR324 clade(Marine group B) uc	SAR324 clade(Marine group B) uc	37.28
+C8	Alphaproteobacteria	Clade II uc	34.97
+C8	Dehalococcoidia	SAR202 clade uc	26.07
+C8	Phycisphaerae	JL-ETNP-F27	20.28
+C8	Nitrososphaeria	Nitrosopumilaceae uc	19.64
+C8	Verrucomicrobiae	Arctic97B-4 marine group uc	19.04
+C8	Gammaproteobacteria	SUP05 cluster	14.89
+C8	Alphaproteobacteria	Clade Ib	14.49
+C8	Nitrososphaeria	Cand Nitrosopumilus	13.76
+C8	Gammaproteobacteria	HOC36 uc	13.19
+C8	Planctomycetes	Planctomycetales uc	9.81
+C8	Alphaproteobacteria	Magnetospiraceae uc	9.78
+C8	Nitrospinia	LS-NOB	9.66
+C8	Alphaproteobacteria	Defluviicoccales uc	9.18
+C8	Alphaproteobacteria	AEGEAN-169 marine group uc	8.49
+C8	Nitrososphaeria	Marine Benthic Group A uc	8.05
+C8	Thermoplasmata	Marine Group II uc	7.2
+C8	Gammaproteobacteria	UBA10353 marine group uc	6.7
+C8	Acidimicrobiia	Sva0996 marine group	5.55
+C8	Gammaproteobacteria	Pseudohongiella	4.83
+C8	Alphaproteobacteria	Clade I uc	4.35
+C8	Alphaproteobacteria	Novosphingobium	4.08
+C8	Vicinamibacteria	Vicinamibacterales uc	4.07
+C8	Bacteroidia	NS5 marine group	4.05
